@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: rgb(73, 73, 73);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.box {
+    background-color: rgb(43, 61, 226);
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    transition: 0.75s;
+}
+
+.box .sircle {
+    background-color: rgb(224, 88, 88);
+    width: 350px;
+    height:350px;
+    border-radius: 175px;
+    position: relative;
+    left: 71px;
+    top: 85px;
+    transition: 0.75s;
+}
+
+.box:hover {
+    background-color: rgb(224, 88, 88);
+    transition: 0.75s;
+    .sircle {
+        background: rgb(43, 61, 226);
+        transition: 0.75s;
+    }
+}
